@@ -1,3 +1,4 @@
 node_modules
-sass/sourcemap/*
-package-lock.json
+/package-lock.json
+/assets/css
+/sass/sourcemap
