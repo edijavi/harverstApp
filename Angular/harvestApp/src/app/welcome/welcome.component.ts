@@ -14,7 +14,7 @@ export class WelcomeComponent implements OnInit {
   constructor(private ps: ProductService) { }
 
   ngOnInit(): void {
-    this.newestProducts$ = this.ps.getNewestProducts(2);
+    this.newestProducts$ = this.ps.getNewestProducts(4);
 
   }
 
