@@ -1,0 +1,58 @@
+.form__control {
+  display: block;
+  width: 100%;
+  height: rem(40px);
+  border: 1px solid #dadada;
+  border-radius: rem(4px);
+  margin-bottom: rem(14px);
+  padding: 3px 13px;
+  background-color: #fff;
+  color: #4a4a4a;
+  font-family: "Roboto", sans-serif;
+  font-size: rem(16px);
+}
+
+
+.form__group {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.form__group--ml {
+  margin-left: rem(22px);
+}
+
+.form__group--large {
+  flex-grow: 2;
+}
+
+.form__row {
+  display: flex;
+  width: 100%;
+}
+
+.form__label--hide {
+  position: absolute;
+  top: -99px;
+}
+
+//Form Welcome
+.form--welcome {
+  display: flex;
+  flex-direction: row;
+  padding: 9px;
+  width: 100%;
+}
+
+
+
+.form__control--search {
+  text-indent: rem(30px);
+  font-family:  "FontAwesome", sans-serif;
+}
+
+
+//form Login
+
+
+

@@ -3,7 +3,7 @@ body {
   color: #4a4a4a;
   font-family: 'Roboto', serif;
   line-height: 1.65;
-  height:100vh;
+  height: 100vh;
   background-color: $color-default;
 
   @include media(md) {

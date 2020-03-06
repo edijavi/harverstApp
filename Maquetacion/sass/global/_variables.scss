@@ -9,3 +9,11 @@ $color-primary: #DAC27C;
 $color-secondary: #D7AF72;
 $color-success: mediumseagreen;
 $color-danger: tomato;
+
+$variants: (
+  'default': $color-default,
+  'primary': $color-primary,
+  'secondary': $color-secondary,
+  'success': $color-success,
+  'danger': $color-danger,
+);
