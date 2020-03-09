@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <header class="welcome-header">
-    <button class="btn">Help</button>
-    <div>
-      <button class="btn">Sign Up</button>
-      <button class="btn">Log In</button>
-    </div>
-    
+  <header>
+    <nav class="nav-header">
+      <button class="btn btn-primary">Help</button>
+      <div>
+        <button class="btn btn-primary">Sign Up</button>
+        <button class="btn btn-primary">Log In</button>
+      </div>
+    </nav>    
   </header>
-  <main class="welcome-body">
+  <main class="welcome-page">
     <h1 class="app-tittle">Harvest</h1>
     <form action="#" class="form form--welcome">
       <div class="form__group">
@@ -24,48 +25,52 @@
       </div>      
     </form>
 
-    <article class="product-category">
-      <div class="category">
-        <svg id="#" class="icon icon--xl">
+    <article class="container">
+      <div class="card">
+        <svg id="#" class="icon icon--avatar">
           <use xlink:href="../assets/icons/sprite.svg#legumbres"></use>
         </svg>
-        <label for="#" class="category__label">Legumbres</label>       
+        <label for="#" class="card__label">legumbres</label>  
+        <a href="#" class="card__link">Show</a>          
       </div>
-      <div class="category">
-        <svg id="#" class="icon icon--xl">
+      <div class="card">
+        <svg id="#" class="icon icon--avatar">
           <use xlink:href="../assets/icons/sprite.svg#frutas"></use>
         </svg>
-        <label for="#" class="category__label">Frutas</label>       
+        <label for="#" class="card__label">frutas</label>
+        <a href="#" class="card__link">Show</a>               
       </div>
-      <div class="category">
-        <svg id="#" class="icon icon--xl">
+      <div class="card">
+        <svg id="#" class="icon icon--avatar">
           <use xlink:href="../assets/icons/sprite.svg#verduras-hortalizas"></use>
         </svg>
-        <label for="#" class="category__label">Verduras</label>       
+        <label for="#" class="card__label">verduras - hortalizas</label>
+        <a href="#" class="card__link">Show</a>       
       </div>
-      <div class="category">
-        <svg id="#" class="icon icon--xl">
+      <div class="card">
+        <svg id="#" class="icon icon--avatar">
           <use xlink:href="../assets/icons/sprite.svg#tuberculos"></use>
         </svg>
-        <label for="#" class="category__label">Tubérculos</label>       
+        <label for="#" class="card__label">tuberculos</label>
+        <a href="#" class="card__link">Show</a>      
       </div>
-      <div class="category">
-        <svg id="#" class="icon icon--xl">
+      <div class="card">
+        <svg id="#" class="icon icon--avatar">
           <use xlink:href="../assets/icons/sprite.svg#frutos-secos"></use>
         </svg>
-        <label for="#" class="category__label">Frutos Secos</label>       
+        <label for="#" class="card__label">frutos secos</label>   
+        <a href="#" class="card__link">Show</a>        
       </div>
-      <div class="category">
-        <svg id="#" class="icon icon--xl">
+      <div class="card">
+        <svg id="#" class="icon icon--avatar">
           <use xlink:href="../assets/icons/sprite.svg#cereales"></use>
         </svg>
-        <label for="#" class="category__label">Cereales</label>       
+        <label for="#" class="card__label">cereales</label> 
+        <a href="#" class="card__link">Show</a>          
       </div>
            
     </article>
-  </main>
-
-  
+  </main>  
 
 </body>
 </html>

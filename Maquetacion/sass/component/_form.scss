@@ -2,10 +2,10 @@
   display: block;
   width: 100%;
   height: rem(40px);
-  border: 1px solid #dadada;
+  border: rem(1px) solid #dadada;
   border-radius: rem(4px);
   margin-bottom: rem(14px);
-  padding: 3px 13px;
+  padding: rem(3px 13px);
   background-color: #fff;
   color: #4a4a4a;
   font-family: "Roboto", sans-serif;
@@ -33,14 +33,14 @@
 
 .form__label--hide {
   position: absolute;
-  top: -99px;
+  top: rem(-99px);
 }
 
 //Form Welcome
 .form--welcome {
   display: flex;
   flex-direction: row;
-  padding: 9px;
+  padding: rem(9px);
   width: 100%;
 }
 
@@ -48,7 +48,9 @@
 
 .form__control--search {
   text-indent: rem(30px);
-  font-family:  "FontAwesome", sans-serif;
+  font-family:  "FontAwesome", sans-serif;  
+  box-sizing: border-box;
+  padding-inline-start: rem(20px);
 }
 
 

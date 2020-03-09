@@ -8,7 +8,8 @@
 
 //Category icons
 
-.icon--xl {
-  width: rem(70px); 
-  height: rem(70px);
+.icon--avatar {
+  width: 100%;
+  height: rem(160px);
+  object-fit: cover;
 }
