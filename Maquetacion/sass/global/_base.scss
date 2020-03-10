@@ -51,6 +51,16 @@ p + h4 {
   margin-top: 2.5rem;
 }
 
+a {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 input::placeholder {
   color: #9b9b9b;
+}
+
+div {
+  display: block;
 }
