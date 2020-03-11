@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "harvestapp-67562": {
+      "hosting": {
+        "harvestApp": [
+          "harvestapp-67562"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "harvestapp-67562"
+  }
+}
