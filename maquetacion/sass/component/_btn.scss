@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: rem(4px);
+  margin: rem(10px 5px);
+  padding: rem(8px 16px);
+  font-size: rem(14px);
+  font-weight: bold;
+  cursor: pointer;
+  background-color: $color-default; 
+  color: #f3f3ef;
+
+  @include media(md) {
+    background-color: $color-primary;
+    
+  }
+  
+  @include media(lg) {
+    background-color: $color-secondary;
+    
+  }
+}

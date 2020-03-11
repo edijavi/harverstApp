@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+      Sign-Up
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title modal-title--signup" id="loginModalLabel">Sign-Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form form--login">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name" class="form__label form__label--hide">name</label>
+                  <input type="text" class="form__control" placeholder="name">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="lastname" class="form__label form__label--hide">lastname</label>
+                  <input type="text" class="form__control" placeholder="lastname">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="address" class="form__label form__label--hide">address</label>
+                  <input type="text" class="form__control" placeholder="address">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="city" class="form__label form__label--hide">city</label>
+                  <input type="text" class="form__control" placeholder="city">
+                </div>
+                <div class="form__group form__group--ml">
+                  <label for="postcode" class="form__label form__label--hide">postcode</label>
+                  <input type="text" class="form__control" placeholder="postcode">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="tlf" class="form__label form__label--hide">tlf</label>
+                  <input type="tel" class="form__control" placeholder="tlf">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="email" class="form__label form__label--hide">email</label>
+                  <input type="email" class="form__control" placeholder="email">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="password" class="form__label form__label--hide">password</label>
+                  <input type="password" class="form__control" placeholder="password">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="password" class="form__label form__label--hide">password</label>
+                  <input type="password" class="form__control" placeholder="password">
+                </div>
+              </div>          
+              <button type="button" class="btn btn-primary btn--signup">Sign-Up</button>                  
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Javascript -->
+    <script 
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+      crossorigin="anonymous">
+    </script>
+    <script src="/node_modules/bootstrap/js/dist/util.js"></script>
+    <script src="/node_modules/bootstrap/js/dist/modal.js"></script>
+
+  </body>
+</html>
