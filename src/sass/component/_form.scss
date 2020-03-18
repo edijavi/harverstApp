@@ -10,6 +10,7 @@
   color: #4a4a4a;
   font-family: "Roboto", sans-serif;
   font-size: rem(16px);
+  text-transform: initial;
 }
 
 
@@ -36,25 +37,27 @@
   top: rem(-99px);
 }
 
+
 //Form Welcome
 .form--welcome {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: rem(9px);
   width: 100%;
 }
 
-
+.form__group--welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 .form__control--search {
-  text-indent: rem(30px);
-  font-family:  "FontAwesome", sans-serif;  
+  // text-indent: rem(30px);
+  font-family:  "FontAwesome", sans-serif;
   box-sizing: border-box;
   padding-inline-start: rem(20px);
 }
-
-
-//form Login
-
-
-

@@ -7,9 +7,17 @@
 <div class="welcome">
   <h1 class="app-tittle">Harvest</h1>
   <form action="#" class="form form--welcome">
-    <div class="form__group">
-      <label for="search-bar" class="form__label form__label--hide">Search</label>
-      <input type="search" id="search-bar" class="form__control form__control--search" placeholder="&#xf002; Type your city, town, village...">
+      <div class="form__group form__group--welcome">
+        <div class="pick-location">
+          <div class="pick-location__wrapper">
+            <svg id="map-marker" class="icon icon--location">
+              <use xlink:href="../assets/icons/sprite.svg#map-marker"></use>
+            </svg>
+            <label for="map-marker" class="pick-location__current-city">Madrid</label>
+          </div>
+        </div>
+        <label for="search-bar" class="form__label form__label--hide">Search</label>
+        <input type="search" id="search-bar" class="form__control form__control--search" placeholder="&#xf002; Which farm product are you looking for?">
     </div>
   </form>
 

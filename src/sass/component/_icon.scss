@@ -1,15 +1,24 @@
-.icon { 
-  width: rem(50px); 
+.icon {
+  width: rem(50px);
   height: rem(50px);
   margin: rem(.5em);
   fill: #fff;
 }
 
 
-//Category icons
+//Products category icons
 
 .icon--avatar {
   width: 100%;
   height: rem(160px);
+  object-fit: cover;
+}
+
+
+//form--welcome
+
+.icon--location {
+  width: rem(20px);
+  height: rem(20px);
   object-fit: cover;
 }
