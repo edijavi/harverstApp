@@ -1,5 +1,5 @@
-.icon { 
-  width: rem(50px); 
+.icon {
+  width: rem(50px);
   height: rem(50px);
   margin: rem(.5em);
   fill: #fff;
@@ -11,5 +11,11 @@
 .icon--avatar {
   width: 100%;
   height: rem(160px);
+  object-fit: cover;
+}
+
+.icon--location {
+  width: rem(20px);
+  height: rem(20px);
   object-fit: cover;
 }

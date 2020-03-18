@@ -7,16 +7,16 @@
   font-size: rem(14px);
   font-weight: bold;
   cursor: pointer;
-  background-color: $color-default; 
-  color: #f3f3ef;
+  background-color: #f3f3ef;
+  color: $color-default;
 
   @include media(md) {
-    background-color: $color-primary;
-    
+    color: $color-primary;
+
   }
-  
+
   @include media(lg) {
-    background-color: $color-secondary;
-    
+    color: $color-secondary;
+
   }
 }
