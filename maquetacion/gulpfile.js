@@ -1,5 +1,5 @@
 'use strict';
- 
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -9,7 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 // para mantener una compatibilidad futura en caso de que
 // cambie el valor predeterminado.
 sass.compiler = require('node-sass');
- 
+
 
 // Compilar los ficheros SCSS y enviar el CSS resutlante
 // en la carpeta /assets/css
