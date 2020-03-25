@@ -4,7 +4,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import {PublicRoutingModule} from './public-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import {SearchComponent} from "../welcome/search/search.component";
 
 
 

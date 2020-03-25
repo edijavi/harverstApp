@@ -3,17 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { WelcomeRoutingModule } from './welcome-routing.module';
 import { WelcomeComponent } from './view/welcome.component';
-import {SearchComponent} from "./search/search.component";
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import { ProductsModule } from '../products/products.module';
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
-    SearchComponent
+    SearchBarComponent
   ],
   imports: [
     CommonModule,
-    WelcomeRoutingModule
+    WelcomeRoutingModule,
+    ProductsModule
   ]
 })
 export class WelcomeModule { }
