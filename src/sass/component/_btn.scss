@@ -12,11 +12,9 @@
 
   @include media(md) {
     color: $color-primary;
-
   }
 
   @include media(lg) {
     color: $color-secondary;
-
   }
 }

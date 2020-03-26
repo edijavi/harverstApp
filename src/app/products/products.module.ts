@@ -26,12 +26,6 @@ import { CerealListComponent } from './components/cereal-list/cereal-list.compon
   ],
   exports: [
     ProductsComponent,
-    LegumeListComponent,
-    FruitListComponent,
-    VegetablesListComponent,
-    TuberListComponent,
-    NutsListComponent,
-    CerealListComponent,
   ]
 })
 export class ProductsModule { }

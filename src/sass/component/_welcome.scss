@@ -3,11 +3,6 @@
   margin: auto;
   padding: rem(8px);
   text-align: center;
-
-
-  @include media(md) {}
-
-  @include media(lg) {}
 }
 
 .pick-location {
@@ -22,10 +17,7 @@
   background: transparent;
   color: #fff;
   &__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flex-row;
   }
   &__current-city {
     text-align: center;

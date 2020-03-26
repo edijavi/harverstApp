@@ -37,28 +37,39 @@
   top: rem(-99px);
 }
 
-
 //Form Welcome
 .form--welcome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+@include flex-row;
   padding: rem(9px);
   width: 100%;
 }
 
 .form__group--welcome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include flex-column;
+
+  @include media(md) {
+    @include flex-row;
+  }
+
+  @include media(lg) {
+    @include flex-row;
+  }
 }
 
 .form__control--search {
-  text-indent: rem(30px);
+  text-indent: rem(8px);
   font-family:  "FontAwesome", sans-serif;
   box-sizing: border-box;
-  padding-inline-start: rem(20px);
+  padding-inline-start: rem(5px);
+
+  @include media(md) {
+    text-indent: rem(15px);
+    padding-inline-start: rem(10px);
+  }
+
+  @include media(lg) {
+    text-indent: rem(30px);
+    padding-inline-start: rem(20px);
+  }
 }
 
