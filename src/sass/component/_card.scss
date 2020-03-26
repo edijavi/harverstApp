@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: rem(16px);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: rem(16px 0);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: rem(240px);
+  background: transparent;
+  box-shadow: rem(0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23));
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card__label {
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: rem(18px);
+  margin: rem(8px 0);
+}
+
+//.card__link {
+//  text-decoration: none;
+//  background: #db4938;
+//  color: #fff;
+//  padding: rem(5px 16px);
+//  border-radius: rem(20px);
+//  margin-bottom: rem(8px);
+//}
+
