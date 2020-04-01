@@ -9,11 +9,9 @@ $color-primary: #DAC27C;
 $color-secondary: #D7AF72;
 $color-success: mediumseagreen;
 $color-danger: tomato;
+$color-click: #307CEB;
+$color-hover: #1461D1;
+$color-border-box: #E2E5ED;
+$color-placeholder: #9EA0A5;
 
-$variants: (
-  'default': $color-default,
-  'primary': $color-primary,
-  'secondary': $color-secondary,
-  'success': $color-success,
-  'danger': $color-danger,
-);
+

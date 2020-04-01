@@ -23,10 +23,9 @@
 }
 .icon--search {
   position: absolute;
-  float: right;
   width: rem(20px);
   height: rem(20px);
-  top: rem(215px);
-  right: rem(15px);
-  color: #9b9b9b;
+  top: rem(4px);
+  right: rem(5px);
+  color: $color-placeholder;
 }

@@ -1,0 +1,8 @@
+<div class="container">
+  <a class="card" *ngFor="let route of routes" [routerLink]="route.route">
+    <svg [id]="route.id" class="icon icon--avatar">
+      <use [attr.xlink:href]="route.link"></use>
+    </svg>
+    <label [for]="route.id" class="card__label">{{route.id}}</label>
+  </a>
+</div>
