@@ -1,4 +1,5 @@
-@mixin media ($media) {
+//Break points
+@mixin media($media) {
   @if $media == md {
     @media (min-width: $breakpoint-md) {
       @content;
@@ -9,3 +10,27 @@
       }
     }
   }
+
+//Position
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+//Btn
+@mixin btn-modal {
+  display: block;
+  margin: 0 auto 12px;
+  width: 100%;
+  background-color: $color-click;
+  color: $color-good;  
+}

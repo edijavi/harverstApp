@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>newProduct</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newProductModal">
+      <svg id="plus-circle" class="icon">
+        <use xlink:href="../assets/icons/sprite.svg#plus-circle"></use>
+      </svg>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newProductModal" tabindex="-1" role="dialog" aria-labelledby="newProductModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title modal-title--newProduct" id="newProductModalLabel">New Product</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form form--newProduct">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="address" class="form__label form__label--hide">tittle</label>
+                  <input type="text" class="form__control" placeholder="tittle">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="stock" class="form__label form__label--hide">stock</label>
+                  <input type="text" class="form__control" placeholder="stock" aria-describedby="valueStockBlock">
+                  <small id="valueStockBlock" class="form-text text-muted">
+                    The stock should be contain a integer number related to the weight in kilos. 
+                  </small>
+                </div>
+                <div class="form__group form__group--ml">
+                  <label for="price" class="form__label form__label--hide">price</label>
+                  <input type="text" class="form__control" placeholder="price" aria-describedby="valuePriceBlock">
+                  <small id="valuePriceBlock" class="form-text text-muted">
+                    The price is referenced in Euros. 
+                  </small>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="tlf" class="form__label form__label--hide">tlf</label>
+                  <input type="tel" class="form__control" placeholder="tlf">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="username" class="form__label form__label--hide">Username</label>
+                  <input type="text" class="form__control" placeholder="Username">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn--newProduct">Publish</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Javascript -->
+    <script 
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+      crossorigin="anonymous">
+    </script>
+    <script src="../node_modules/bootstrap/js/dist/util.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/modal.js"></script>
+
+  </body>
+</html>

@@ -2,17 +2,16 @@
   display: block;
   width: 100%;
   height: rem(40px);
-  border: rem(1px) solid #dadada;
+  border: rem(1px) solid $color-border-box;
   border-radius: rem(4px);
   margin-bottom: rem(14px);
   padding: rem(3px 13px);
   background-color: #fff;
-  color: #4a4a4a;
+  color: $color-placeholder;
   font-family: "Roboto", sans-serif;
   font-size: rem(16px);
-  text-transform: initial;
+  text-transform: capitalize;
 }
-
 
 .form__group {
   flex-grow: 1;
@@ -34,34 +33,46 @@
 
 .form__label--hide {
   position: absolute;
-  top: rem(-99px);
+  top: rem(-999px);
 }
-
 
 //Form Welcome
 .form--welcome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+@include flex-row;
   padding: rem(9px);
   width: 100%;
 }
+.form__row--welcome {
+  @include flex-column;
+
+  @include media(md) {
+    @include flex-row;
+  }
+
+  @include media(lg) {
+    @include flex-row;
+  }
+}
 
 .form__group--welcome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  @include flex-row;
 }
 
 .form__control--search {
-  font-family: "FontAwesome", sans-serif;
+  text-indent: rem(8px);
+  font-family:  "FontAwesome", sans-serif;
   box-sizing: border-box;
-  padding-inline-start: rem(20px);
+  padding-inline-start: rem(5px);
+
+  @include media(md) {
+    text-indent: rem(15px);
+    padding-inline-start: rem(10px);
+  }
+
+  @include media(lg) {
+    text-indent: rem(30px);
+    padding-inline-start: rem(20px);
+  }
 }
-
-
-
-
 
