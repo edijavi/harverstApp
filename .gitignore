@@ -1,6 +1,5 @@
 /.idea
-/dist/harvestApp
-/maquetacion/node_modules
-/maquetacion/package-lock.json
-/maquetacion/sass/sourcemap
-/maquetacion/assets/css
+/assets/css
+/node_modules
+/sass/sourcemap
+/package-lock.json

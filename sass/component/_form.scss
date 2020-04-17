@@ -1,0 +1,87 @@
+.form__control {
+  display: block;
+  width: 100%;
+  height: rem(40px);
+  border: rem(1px) solid $color-border-box;
+  border-radius: rem(4px);
+  margin-bottom: rem(14px);
+  padding: rem(3px 13px);
+  background-color: #fff;
+  color: $color-input;
+  font-family: "Roboto", sans-serif;
+  font-size: rem(16px);
+}
+
+.form__group {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.form__group--ml {
+  margin-left: rem(22px);
+}
+
+.form__group--large {
+  flex-grow: 2;
+}
+
+.form__row {
+  display: flex;
+  width: 100%;
+}
+
+.form__label--hide {
+  position: absolute;
+  top: rem(-999px);
+}
+
+.form__label {
+  font-family: "Roboto", sans-serif;
+  font-size: rem(14px);
+  color: $color-label-form;
+  text-transform: lowercase;
+  
+  &::first-letter {text-transform: uppercase;}
+}
+
+
+//Form Welcome
+.form--welcome {
+@include flex-row;
+  padding: rem(9px);
+  width: 100%;
+}
+.form__row--welcome {
+  @include flex-column;
+
+  @include media(md) {
+    @include flex-row;
+  }
+
+  @include media(lg) {
+    @include flex-row;
+  }
+}
+
+.form__group--welcome {
+  position: relative;
+  @include flex-row;
+}
+
+.form__control--search {
+  text-indent: rem(8px);
+  font-family:  "FontAwesome", sans-serif;
+  box-sizing: border-box;
+  padding-inline-start: rem(5px);
+
+  @include media(md) {
+    text-indent: rem(15px);
+    padding-inline-start: rem(10px);
+  }
+
+  @include media(lg) {
+    text-indent: rem(30px);
+    padding-inline-start: rem(20px);
+  }
+}
+

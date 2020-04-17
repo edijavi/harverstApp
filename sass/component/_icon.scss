@@ -1,0 +1,40 @@
+//Sprite icons svg
+.icon {
+  width: rem(50px);
+  height: rem(50px);
+  margin: rem(.5em);
+  fill: #fff;
+}
+
+
+//Product card avatar
+.icon--avatar {
+  width: 100%;
+  height: rem(160px);
+  object-fit: cover;
+}
+
+
+//Form--welcome
+.icon--location {
+  width: rem(20px);
+  height: rem(20px);
+  object-fit: cover;
+}
+.icon--search {
+  position: absolute;
+  width: rem(20px);
+  height: rem(20px);
+  top: rem(4px);
+  right: rem(5px);
+  color: $color-placeholder;
+}
+
+//Add New Product
+.icon--addNewProduct {
+  display: inline-block;
+  flex-shrink: 0;
+  height: rem(32px);
+  width: rem(32px);
+  margin: 0;
+}
