@@ -19,7 +19,17 @@
   }
 }
 
-//Button with Icon
+//Button Add New Product
 .btn--addNewProduct{
   @include flex;
+  height: rem(64px);
+  width: rem(64px);
+  border-radius: 50%;
+}
+
+//Buttons at the Toolbar
+.btn--toolbar{
+  @include flex;
+  height: rem(48px);
+  width: rem(48px);
 }

@@ -49,26 +49,29 @@
               <div class="form__row">
                 <div class="form__group">
                   <label for="stock" class="form__label">Stock</label>
-                  <input type="text" class="form__control" id="stock" placeholder="Kg available" aria-describedby="valueStockBlock">
-                  <small id="valueStockBlock" class="form-text text-muted">Stock in Kg.</small>
+                  <input type="text" class="form__control" id="stock" placeholder="Kg" aria-describedby="valueStockBlock">
+                  <small id="valueStockBlock" class="form__small">*Stock in Kg.</small>
                 </div>
                 <div class="form__group form__group--ml">
                   <label for="price" class="form__label">price</label>
-                  <input type="text" class="form__control" id="price" placeholder="Price/Kg" aria-describedby="valuePriceBlock">
-                  <small id="valuePriceBlock" class="form-text text-muted">Price in €.</small>
+                  <input type="text" class="form__control" id="price" placeholder="€/Kg" aria-describedby="valuePriceBlock">
+                  <small id="valuePriceBlock" class="form__small">*Price in €.</small>
                 </div>
-              </div>
-              <div class="form__row">
-                <div class="form__group">
+                <div class="form__group  form__group--ml">
                   <label for="location" class="form__label">Location</label>
-                  <input type="text" class="form__control" id="location" placeholder="Allow location" aria-describedby="valueLocationBlock">
-                  <small id="valueLocationBlock" class="form-text text-muted">GMaps</small>
+                  <label class="switch">
+                    <input type="checkbox" id="location" aria-describedby="valueLocationBlock">
+                    <span class="slider round"></span>
+                  </label>
+                  <small id="valueLocationBlock" class="form__small">*GMaps</small>
                 </div>
-                <div class="form__group form__group--ml">
-                  <label for="expireDate" class="form__label">Date</label>
+              </div>              
+              <div class="form__row">                                
+                <div class="form__group">
+                  <label for="expireDate" class="form__label">Expire Date</label>
                   <input type="date" class="form__control" id="expireDate" placeholder="DD/MM/YYYY" aria-describedby="valueDateBlock">
-                  <small id="valueDateBlock" class="form-text text-muted">Date to finish the add</small>
-                </div>
+                  <small id="valueDateBlock" class="form__small">*Date to finish the add</small>
+                </div>                             
               </div>
               <button type="submit" class="btn btn-primary btn--newProduct">Publish</button>
             </form>
