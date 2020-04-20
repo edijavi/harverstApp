@@ -1,0 +1,20 @@
+.modal-title--list-group-categories {
+  font-size: rem(22px);
+  color: #385898 ;
+}
+
+.list-group-item {
+  background-color: $color-default;
+
+  @include media(md){
+    background-color: $color-primary;
+  }
+  @include media(lg){
+    background-color: $color-secondary;
+  }
+}
+
+.badge-primary {
+  background-color: #fff;
+  color: #495057
+}
