@@ -1,5 +1,5 @@
 //Header of list-group
-.list-group-header-categories {
+.list-group-header-products-categorized {
   width: 100%;
   height: rem(62px);
   margin: rem(5px 0);
@@ -8,6 +8,9 @@
   font-weight: 700;
   color: #385898 ;
   @include flex-space-between;
+  &__wrapper {
+    @include flex;
+  }
   
   &__current-city {
     @include flex-row;
@@ -18,7 +21,7 @@
     background : transparent;
     box-shadow : none;
     margin : 0;    
-    padding : 0;
+    padding : 0;    
     color : $color-input;
     
     & span{
@@ -31,10 +34,7 @@
 }
 
 //Line of list-group
-.list-group-item--categories {
-  font-size: rem(18px);
-  font-weight: 400;
-  color: #385898 ;  
+.list-group-item--products-categorized {
   @include flex-space-between;
   background-color: $color-default;
 
@@ -45,11 +45,13 @@
     background-color: $color-secondary;
   }
 }
-
-//Round number of products
-.badge-primary--categories {
-  background-color: $color-good;
-  color: #385898;
+//item
+.item-resume {
+  & :first-child{
+    font-weight: 700;
+  }
+  & span {
+  display: block;
+  }
 }
-
 

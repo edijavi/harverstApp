@@ -17,8 +17,7 @@
 @import "../node_modules/bootstrap/scss/list-group";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/badge";
-
-
+@import "../node_modules/bootstrap/scss/card";
 
 
 //_____________________________________________________
@@ -32,6 +31,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
 
+//____________________________________________________
 // My Componets
 //____________________________________________________
 @import "component/toolbar";
@@ -45,7 +45,14 @@
 @import "component/modal-signup";
 @import "component/modal-new-product";
 @import "component/toggle-btn";
-@import "component/list-group-categories"
+@import "component/list-group-categories";
+@import "component/list-group-products-categorized";
+@import "component/list-group-products-uncategorized";
+@import "component/item-product-details";
+@import "component/modal-request-product";
+@import "component/help";
+@import "component/modal-success";
+
 
 
 

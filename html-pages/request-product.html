@@ -4,46 +4,40 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
+    <title>Request product</title>
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
   <body>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
-      Log-In
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestProductModal">
+      Request
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal fade" id="requestProductModal" tabindex="-1" role="dialog" aria-labelledby="requestProductModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title modal-title--login" id="loginModalLabel">Log-In</h5>
+            <h5 class="modal-title modal-title--requestProduct" id="requestProductModalLabel">Request Product</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form action="" class="form form--login">
+            <form action="" class="form">
               <div class="form__row">
                 <div class="form__group">
-                  <label for="username" class="form__label">Email</label>
-                  <input type="text" class="form__control" placeholder="Enter a valid email">
+                  <label for="quantity" class="form__label">Quantity</label>
+                  <input id="quantity" type="number" class="form__control" placeholder="Kg">
                 </div>
               </div>
               <div class="form__row">
                 <div class="form__group">
-                  <label for="password" class="form__label">Password</label>
-                  <input type="password" class="form__control" placeholder="Enter your password">
+                  <label for="date-pickup" class="form__label">Date to pickup</label>
+                  <input id="date-pickup" type="text" class="form__control" placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
                 </div>
               </div>
-              <button type="button" class="btn btn-primary btn--login">Log-In</button>    
-              <div class="link-button">
-                <a href="#">Forgot your password?</a>
-              </div>
-              <div class="link-button">
-                <a href="#">Sign up?</a>
-              </div>
+              <button type="button" class="btn btn-primary btn--requestProduct">Send</button>
             </form>
           </div>
           <div class="modal-footer">
@@ -51,11 +45,11 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
     <!-- Javascript -->
-    <script 
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous">
     </script>
     <script src="../node_modules/bootstrap/js/dist/util.js"></script>

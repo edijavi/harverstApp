@@ -21,6 +21,7 @@
   height: rem(20px);
   object-fit: cover;
 }
+
 .icon--search {
   position: absolute;
   width: rem(20px);
@@ -30,7 +31,8 @@
   color: $color-placeholder;
 }
 
-//Add New Product
+
+//Add New Product btn
 .icon--addNewProduct {
   display: inline-block;
   flex-shrink: 0;
@@ -40,6 +42,16 @@
 }
 
 .icon--toolbarBtn {
+  display: inline-block;
+  flex-shrink: 0;
+  height: rem(32px);
+  width: rem(32px);
+  margin: 0;
+}
+
+
+//List Categories
+.icon--tabList {
   display: inline-block;
   flex-shrink: 0;
   height: rem(32px);

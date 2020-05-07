@@ -15,5 +15,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ionicons": "^4.5.9-1"
+  }
 }

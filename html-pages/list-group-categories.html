@@ -7,33 +7,45 @@
     <title>Categories list</title>
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
-  <body>
+  <body>    
     <div class="list-group" id="myList" role="tablist">
-      <a class="list-group-item list-group-item-action active" data-toggle="list" href="#legumbres" role="tab">
+      <div class="list-group-header-categories">
+        <button class="btn btn-primary btn--tabBtn">
+          <svg id="chevron-left" class="icon icon--tabList">
+            <use xlink:href="../assets/icons/sprite.svg#chevron-left"></use>
+          </svg>
+        </button>
+        <div class="list-group-header-categories__current-city">
+          <span>Madrid</span>
+          <svg id="chevron-down" class="icon icon--location">
+            <use xlink:href="../assets/icons/sprite.svg#chevron-down"></use>
+          </svg>
+        </div>          
+      </div>
+      <a class="list-group-item list-group-item--categories list-group-item-action active" data-toggle="list" href="#legumbres" role="tab">
         Legumbres
-        <span class="badge badge-primary badge-pill">2</span>
+        <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
       </a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#frutas" role="tab">
+      <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#frutas" role="tab">
         Frutas
-        <span class="badge badge-primary badge-pill">2</span>
+        <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
       </a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#verduras-hortalizas" role="tab">
+      <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#verduras-hortalizas" role="tab">
         Verduras-Hortalizas
-        <span class="badge badge-primary badge-pill">2</span>
+        <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
       </a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#tuberculos" role="tab">
+      <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#tuberculos" role="tab">
         Tuberculos
-        <span class="badge badge-primary badge-pill">2</span>     
+        <span class="badge badge-primary badge-primary--categories badge-pill">2</span>     
       </a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#frutos-secos" role="tab">
+      <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#frutos-secos" role="tab">
         Frutos-Secos
-        <span class="badge badge-primary badge-pill">2</span>
+        <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
       </a>
-      <a class="list-group-item list-group-item-action" data-toggle="list" href="#cereales" role="tab">
+      <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#cereales" role="tab">
         Cereales
-        <span class="badge badge-primary badge-pill">2</span>
+        <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
       </a>
-
     </div>
     
     <!-- Tab panes -->
@@ -56,5 +68,6 @@
     </script>
     <script src="../node_modules/bootstrap/js/dist/util.js"></script>
     <script src="../node_modules/bootstrap/js/dist/tab.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/button.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="newProductModal" tabindex="-1" role="dialog" aria-labelledby="newProductModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title modal-title--newProduct" id="newProductModalLabel">New Product</h5>
@@ -75,8 +75,15 @@
               <div class="form__row">                                
                 <div class="form__group">
                   <label for="expireDate" class="form__label">Expire Date</label>
-                  <input type="date" class="form__control" id="expireDate" placeholder="DD/MM/YYYY" aria-describedby="valueDateBlock">
+                  <input type="text" class="form__control" id="expireDate" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" aria-describedby="valueDateBlock">
                   <small id="valueDateBlock" class="form__small">*Date to finish the add</small>
+                </div>                             
+              </div>
+              <div class="form__row">                                
+                <div class="form__group">
+                  <label for="details" class="form__label">Description</label>
+                  <input type="text" class="form__control" id="details" placeholder="Extra details" aria-describedby="valueDetailsBlock">
+                  <small id="valueDetailsBlock" class="form__small">*Optional</small>
                 </div>                             
               </div>
               <button type="submit" class="btn btn-primary btn--newProduct">Publish</button>
@@ -96,5 +103,6 @@
     </script>
     <script src="../node_modules/bootstrap/js/dist/util.js"></script>
     <script src="../node_modules/bootstrap/js/dist/modal.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/button.js"></script>
     </body>
 </html>
