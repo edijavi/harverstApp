@@ -1,4 +1,4 @@
-//Break points
+//Break points Responsive
 @mixin media($media) {
   @if $media == md {
     @media (min-width: $breakpoint-md) {
@@ -11,13 +11,15 @@
     }
   }
 
-//Position
+
+//Flex Layout
 @mixin flex-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+
 
 @mixin flex-column {
   display: flex;
@@ -26,17 +28,19 @@
   justify-content: center;
 }
 
+
 @mixin flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 @mixin flex-space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 
 
 //Btn
@@ -48,11 +52,3 @@
   color: $color-good;  
 }
 
-//Font family online import
-@font-face { 
-  font-family: "Ionicons"; 
-  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1"); 
-  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1") format("woff"), url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg"); 
-  font-weight: normal; 
-  font-style: normal; 
-}
