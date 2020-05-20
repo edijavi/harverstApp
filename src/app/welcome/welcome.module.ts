@@ -5,13 +5,15 @@ import { WelcomeRoutingModule } from './welcome-routing.module';
 import { WelcomeComponent } from './view/welcome.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { ProductCategoriesComponent } from './components/product-categories/product-categories.component';
+import { ChangeLocationComponent } from './components/change-location/change-location.component';
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
     SearchBarComponent,
-    ProductCategoriesComponent
+    ProductCategoriesComponent,
+    ChangeLocationComponent
   ],
   imports: [
     CommonModule,
