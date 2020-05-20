@@ -2,10 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static('./dist/harvest-app'));
+app.use(express.static('./dist/harvestApp'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/harvest-app/'}),
+    res.sendFile('index.html', {root: 'dist/harvestApp/'}),
 );
 
 app.listen(process.env.PORT || 8080);
