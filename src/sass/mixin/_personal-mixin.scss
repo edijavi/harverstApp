@@ -1,15 +1,18 @@
+//Break points Responsive
 @mixin media($media) {
   @if $media == md {
     @media (min-width: $breakpoint-md) {
       @content;
     }
   }@else if $media == lg {
-      @media (min-width: $breakpoint-lg) {
-        @content;
-      }
+    @media (min-width: $breakpoint-lg) {
+      @content;
     }
   }
+}
 
+
+//Flex Layout
 @mixin flex-row {
   display: flex;
   flex-direction: row;
@@ -17,9 +20,35 @@
   justify-content: center;
 }
 
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+//Btn
+@mixin btn-modal {
+  display: block;
+  margin: rem(0 auto 12px);
+  width: 100%;
+  background-color: $color-click;
+  color: $color-good;
+}
+

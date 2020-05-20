@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {HelpComponent} from './help/help.component';
 
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
     loadChildren: () => import('../welcome/welcome.module')
       .then(m => m.WelcomeModule) },
   { path: '',   redirectTo: '/welcome', pathMatch: 'full' },
+  { path: 'help', component: HelpComponent },
   // { path: '**', component: PageNotFoundComponent }
   ];
 

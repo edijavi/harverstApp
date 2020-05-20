@@ -1,10 +1,15 @@
 //Welcome page
 .toolbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: rem(62px);
   margin: rem(5px 0);
   padding: rem(0 10px);
+}
+
+.toolbar__btn-group {
+  @include flex-row;
 }

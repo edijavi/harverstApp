@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-product-card',
-  templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.scss']
+  selector: 'app-product-categories',
+  templateUrl: './product-categories.component.html',
+  styleUrls: ['./product-categories.component.scss']
 })
-export class ProductCardComponent implements OnInit {
-
+export class ProductCategoriesComponent implements OnInit {
   routes = [
     { route: '/products/legumbres', id: 'legumbres', link: '../assets/icons/sprite.svg#legumbres'},
     { route: '/products/frutas', id: 'frutas', link: '../assets/icons/sprite.svg#frutas'},

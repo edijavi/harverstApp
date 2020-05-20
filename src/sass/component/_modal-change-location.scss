@@ -1,0 +1,9 @@
+.modal-title--changeLocation {
+  font-size: rem(22px);
+  color: #385898 ;
+}
+.btn--changeLocation {
+@include btn-modal;
+}
+
+

@@ -4,6 +4,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import {PublicRoutingModule} from './public-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { HelpComponent } from './help/help.component';
 
 
 
@@ -11,7 +12,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   declarations: [
     ToolbarComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    HelpComponent
   ],
   imports: [
     CommonModule,

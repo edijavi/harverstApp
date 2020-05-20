@@ -1,0 +1,63 @@
+//Header of list-group
+.list-group-header-products-categorized {
+  width: 100%;
+  height: rem(62px);
+  margin: rem(5px 0);
+  padding: rem(0 10px);
+  font-size: rem(22px);
+  font-weight: 700;
+  color: #385898 ;
+  @include flex-space-between;
+  &__wrapper {
+    @include flex;
+  }
+  
+  &__current-city {
+    @include flex-row;
+    cursor: pointer;
+    width : auto;
+    height : auto;
+    border : none;
+    background : transparent;
+    box-shadow : none;
+    margin : 0;    
+    padding : 0;    
+    color : $color-input;
+    
+    & span{
+      line-height : inherit;
+      font-size : rem(16px);
+      font-weight: 400;
+      border-bottom : dashed 1px $color-danger;
+    }
+  }  
+}
+
+.card-body {
+  & .card-title {
+    font-weight: 700;
+  }
+  & .card-text {
+    font-size: rem(14px);
+  }
+  & .list-group {
+    font-size: rem(14px);
+    & .list-group-item{
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+      & span {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.btn--request {
+  display: block;
+  margin: rem(0 auto 12px);
+  width: 100%;
+  background-color: $color-click;
+  color: $color-good;  
+}
+

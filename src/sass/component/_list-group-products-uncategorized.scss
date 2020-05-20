@@ -1,0 +1,54 @@
+//Header of list-group
+.list-group-header-products-uncategorized {
+  width: 100%;
+  height: rem(62px);
+  margin: rem(5px 0);
+  padding: rem(0 10px);
+  font-size: rem(22px);
+  font-weight: 700;
+  color: #385898 ;
+  @include flex-space-between;
+  
+  &__current-city {
+    @include flex-row;
+    cursor: pointer;
+    width : auto;
+    height : auto;
+    border : none;
+    background : transparent;
+    box-shadow : none;
+    margin : 0;    
+    padding : 0;    
+    color : $color-input;
+    
+    & span{
+      line-height : inherit;
+      font-size : rem(16px);
+      font-weight: 400;
+      border-bottom : dashed 1px $color-danger;
+    }
+  }  
+}
+
+//Line of list-group
+.list-group-item--products-uncategorized {
+  @include flex-space-between;
+  background-color: $color-default;
+
+  @include media(md){
+    background-color: $color-primary;
+  }
+  @include media(lg){
+    background-color: $color-secondary;
+  }
+}
+//item
+.item-resume {
+  & :first-child{
+    font-weight: 700;
+  }
+  & span {
+  display: block;
+  }
+}
+

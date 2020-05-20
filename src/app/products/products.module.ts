@@ -9,7 +9,7 @@ import { VegetablesListComponent } from './components/vegetables-list/vegetables
 import { TuberListComponent } from './components/tuber-list/tuber-list.component';
 import { NutsListComponent } from './components/nuts-list/nuts-list.component';
 import { CerealListComponent } from './components/cereal-list/cereal-list.component';
-import { NewProductComponent } from './components/new-product/new-product.component';
+
 
 
 @NgModule({
@@ -20,8 +20,7 @@ import { NewProductComponent } from './components/new-product/new-product.compon
     VegetablesListComponent,
     TuberListComponent,
     NutsListComponent,
-    CerealListComponent,
-    NewProductComponent],
+    CerealListComponent],
   imports: [
     CommonModule,
     ProductsRoutingModule

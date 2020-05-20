@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { WelcomeRoutingModule } from './welcome-routing.module';
 import { WelcomeComponent } from './view/welcome.component';
-import { SearchBarComponent } from './shared/search-bar/search-bar.component';
-import {ProductCardComponent} from './product-card/product-card.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { ProductCategoriesComponent } from './components/product-categories/product-categories.component';
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
     SearchBarComponent,
-    ProductCardComponent
+    ProductCategoriesComponent
   ],
   imports: [
     CommonModule,
