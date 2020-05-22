@@ -12,6 +12,6 @@ export const environment = {
   },
 
   // apiBack: 'http://localhost:3977/api',
-  apiBack: 'https://borify-api-rest.herokuapp.com/api',
+  apiBack: 'https://harvest-api-rest.herokuapp.com/api',
   ip: '127.0.0.1'
 };
