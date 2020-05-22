@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+<div class="modal fade" *ngIf="!identity" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,20 +9,26 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="" class="form form--login">
+        <div *ngIf="errorMessage">
+          <div class="alert alert-info" role="alert">
+            <strong>Ups...</strong>
+            {{errorMessage}}
+          </div>
+        </div>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()" action="" class="form form--login">
           <div class="form__row">
             <div class="form__group">
               <label for="username" class="form__label">Email</label>
-              <input type="text" class="form__control" placeholder="Enter a valid email">
+              <input type="email" #email="ngModel" name="email" [(ngModel)]="user.email" class="form__control" placeholder="Enter a valid email" required>
             </div>
           </div>
           <div class="form__row">
             <div class="form__group">
               <label for="password" class="form__label">Password</label>
-              <input type="password" class="form__control" placeholder="Enter your password">
+              <input type="password" #password="ngModel" name="password" [(ngModel)]="user.password" class="form__control" placeholder="Enter your password" required>
             </div>
           </div>
-          <button type="button" class="btn btn-primary btn--login">Log-In</button>
+          <button type="submit" class="btn btn-primary btn--login">Log-In</button>
           <div class="link-button">
             <a href="#">Forgot your password?</a>
           </div>
@@ -37,3 +43,6 @@
     </div>
   </div>
 </div>
+
+
+
