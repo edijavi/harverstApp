@@ -7,10 +7,10 @@ import { VegetablesListComponent } from './components/vegetables-list/vegetables
 import { TuberListComponent } from './components/tuber-list/tuber-list.component';
 import { NutsListComponent } from './components/nuts-list/nuts-list.component';
 import { CerealListComponent } from './components/cereal-list/cereal-list.component';
-import {ListCategoryResultsComponent} from './components/list-category-results/list-category-results.component';
+import { ListCategoriesComponent } from './components/list-categories/list-categories.component';
 
 const routes: Routes = [
-  { path: 'list-category-results', component: ListCategoryResultsComponent },
+  { path: 'list-categories', component: ListCategoriesComponent },
   { path: 'legumbres', component: LegumeListComponent },
   { path: 'frutas', component: FruitListComponent },
   { path: 'verduras-hortalizas', component: VegetablesListComponent },

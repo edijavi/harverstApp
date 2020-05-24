@@ -8,13 +8,15 @@ import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {PublicRoutingModule} from './public-routing.module';
 import { HelpComponent } from './components/help/help.component';
+import { ToolbarLoggedComponent } from './components/toolbar-logged/toolbar-logged.component';
 
 
 
 @NgModule({
   declarations: [
     ToolbarComponent,
-    HelpComponent
+    HelpComponent,
+    ToolbarLoggedComponent
   ],
   imports: [
     BrowserModule,

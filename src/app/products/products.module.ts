@@ -9,8 +9,14 @@ import { VegetablesListComponent } from './components/vegetables-list/vegetables
 import { TuberListComponent } from './components/tuber-list/tuber-list.component';
 import { NutsListComponent } from './components/nuts-list/nuts-list.component';
 import { CerealListComponent } from './components/cereal-list/cereal-list.component';
-import { ListCategoryResultsComponent } from './components/list-category-results/list-category-results.component';
-import { HeaderResultsComponent } from './components/header-results/header-results.component';
+import { ListProductsByCategoryComponent } from './components/list-products-by-category/list-products-by-category.component';
+import { ListCategoriesComponent } from './components/list-categories/list-categories.component';
+import { ResultsHeaderComponent } from './components/results-header/results-header.component';
+import { ListProductsByNameComponent } from './components/list-products-by-name/list-products-by-name.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { NewProductComponent } from './components/new-product/new-product.component';
+import { ProductRequestComponent } from './components/product-request/product-request.component';
+import { SuccessedRequestComponent } from './components/successed-request/successed-request.component';
 
 
 
@@ -23,8 +29,14 @@ import { HeaderResultsComponent } from './components/header-results/header-resul
     TuberListComponent,
     NutsListComponent,
     CerealListComponent,
-    ListCategoryResultsComponent,
-    HeaderResultsComponent],
+    ListProductsByCategoryComponent,
+    ListCategoriesComponent,
+    ResultsHeaderComponent,
+    ListProductsByNameComponent,
+    ProductDetailsComponent,
+    NewProductComponent,
+    ProductRequestComponent,
+    SuccessedRequestComponent],
   imports: [
     CommonModule,
     ProductsRoutingModule
