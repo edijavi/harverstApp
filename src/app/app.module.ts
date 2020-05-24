@@ -7,6 +7,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {environment} from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {PublicModule} from './public/public.module';
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -19,7 +20,8 @@ import {PublicModule} from './public/public.module';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    PublicModule
+    PublicModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

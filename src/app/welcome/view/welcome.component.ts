@@ -19,11 +19,6 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.newestProducts$ = this.ps.getNewestProducts(4);
-    this.getIndentity();
-  }
-
-  getIndentity(): void {
-    this.identity=this._userService.getIndentity();
   }
 
 }
