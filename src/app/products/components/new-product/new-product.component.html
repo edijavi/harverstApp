@@ -1,0 +1,86 @@
+<button type="button" class="btn btn-primary btn--addNewProduct" data-toggle="modal" data-target="#newProductModal">
+  <svg id="plus-circle" class="icon icon--addNewProduct">
+    <use xlink:href="../assets/icons/sprite.svg#plus-circle"></use>
+  </svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="newProductModal" tabindex="-1" role="dialog" aria-labelledby="newProductModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title modal-title--newProduct" id="newProductModalLabel">New Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="form form--newProduct">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="titleNewProduct" class="form__label">Title</label>
+              <input type="text" class="form__control" id="titleNewProduct" placeholder="Enter a tittle">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="category" class="form__label">Category</label>
+              <select id="category" class="form__control" name="category">
+                <option value="legumbres">Legumbres</option>
+                <option value="frutas">Frutas</option>
+                <option value="verduras">Verduras</option>
+                <option value="tuberculos">Tuberculos</option>
+                <option value="frutos-secos">Frutos secos</option>
+                <option value="cereales">Cereales</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="stock" class="form__label">Stock</label>
+              <input type="text" class="form__control" id="stock" placeholder="Kg" aria-describedby="valueStockBlock">
+              <small id="valueStockBlock" class="form__small">*Stock in Kg.</small>
+            </div>
+            <div class="form__group form__group--ml">
+              <label for="price" class="form__label">price</label>
+              <input type="text" class="form__control" id="price" placeholder="€/Kg" aria-describedby="valuePriceBlock">
+              <small id="valuePriceBlock" class="form__small">*Price in €.</small>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="locationAddress" class="form__label">Address</label>
+              <input type="text" class="form__control" id="locationAddress" placeholder="Address">
+            </div>
+            <div class="form__group  form__group--ml">
+              <label for="location" class="form__label">Location</label>
+              <label class="switch">
+                <input type="checkbox" id="location" aria-describedby="valueLocationBlock">
+                <span class="slider round"></span>
+              </label>
+              <small id="valueLocationBlock" class="form__small">*Maps</small>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="expireDate" class="form__label">Expire Date</label>
+              <input type="text" class="form__control" id="expireDate" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" aria-describedby="valueDateBlock">
+              <small id="valueDateBlock" class="form__small">*Date to finish the add</small>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="details" class="form__label">Description</label>
+              <input type="text" class="form__control" id="details" placeholder="Extra details" aria-describedby="valueDetailsBlock">
+              <small id="valueDetailsBlock" class="form__small">*Optional</small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn--newProduct">Publish</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
