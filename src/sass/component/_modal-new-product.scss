@@ -1,0 +1,8 @@
+.modal-title--newProduct {
+  font-size: rem(22px);
+  color: #385898 ;
+}
+
+.btn--newProduct {
+  @include btn-modal;
+}

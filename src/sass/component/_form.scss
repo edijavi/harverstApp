@@ -2,21 +2,19 @@
   display: block;
   width: 100%;
   height: rem(40px);
-  border: rem(1px) solid #dadada;
+  border: rem(1px) solid $color-border-box;
   border-radius: rem(4px);
-  margin-bottom: rem(14px);
   padding: rem(3px 13px);
   background-color: #fff;
-  color: #4a4a4a;
+  color: $color-input;
   font-family: "Roboto", sans-serif;
   font-size: rem(16px);
-  text-transform: capitalize;
 }
-
 
 .form__group {
   flex-grow: 1;
   flex-basis: 0;
+  margin-bottom: rem(14px);
 }
 
 .form__group--ml {
@@ -34,17 +32,32 @@
 
 .form__label--hide {
   position: absolute;
-  top: rem(-99px);
+  top: rem(-999px);
 }
 
-//Form Welcome
-.form--welcome {
+.form__label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: rem(14px);
+  color: $color-label-form;
+  text-transform: lowercase;
+  
+  &::first-letter {text-transform: uppercase;}
+}
+
+.form__small {
+  display: block;
+  font-style: italic;
+}
+
+
+//Form Search
+.form--search {
 @include flex-row;
   padding: rem(9px);
   width: 100%;
 }
-
-.form__group--welcome {
+.form__row--search {
   @include flex-column;
 
   @include media(md) {
@@ -54,6 +67,11 @@
   @include media(lg) {
     @include flex-row;
   }
+}
+
+.form__group--search {
+  position: relative;
+  @include flex-row;
 }
 
 .form__control--search {

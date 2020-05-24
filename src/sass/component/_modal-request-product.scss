@@ -1,0 +1,7 @@
+.modal-title--requestProduct {
+  font-size: rem(22px);
+  color: #385898 ;
+}
+.btn--requestProduct {
+  @include btn-modal;
+}

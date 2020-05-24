@@ -13,9 +13,10 @@
   align-items: center;
   flex-direction: column;
   width: auto;
-  height: rem(240px);
+  // height: rem(240px);
+  height: auto;
   background: transparent;
-  box-shadow: rem(0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23));
+  box-shadow: rem(0 0 8px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
   margin: auto;
   overflow: hidden;

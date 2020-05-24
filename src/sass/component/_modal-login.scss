@@ -1,10 +1,9 @@
 .modal-title--login {
+  font-size: rem(22px);
   color: #385898 ;
 }
 .btn--login {
-  display: block;
-  margin: 0 auto 12px;
-  width: 100%;
+@include btn-modal;
 }
 
 .link-button {

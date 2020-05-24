@@ -3,19 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { WelcomeRoutingModule } from './welcome-routing.module';
 import { WelcomeComponent } from './view/welcome.component';
-import { SearchBarComponent } from './shared/search-bar/search-bar.component';
-import { ProductsModule } from '../products/products.module';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { ProductCategoriesComponent } from './components/product-categories/product-categories.component';
+import { ChangeLocationComponent } from './components/change-location/change-location.component';
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ProductCategoriesComponent,
+    ChangeLocationComponent
   ],
   imports: [
     CommonModule,
-    WelcomeRoutingModule,
-    ProductsModule
+    WelcomeRoutingModule
   ]
 })
 export class WelcomeModule { }

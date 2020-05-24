@@ -9,5 +9,9 @@ export const environment = {
     messagingSenderId: '429700059277',
     appId: '1:429700059277:web:04c9a861d0b45225d492c4',
     measurementId: 'G-PQDLRJ8PSD'
-  }
+  },
+
+  // apiBack: 'http://localhost:3977/api',
+  apiBack: 'https://harvest-api-rest.herokuapp.com/api',
+  ip: '127.0.0.1'
 };

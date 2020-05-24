@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  color: #4a4a4a;
+  color: #3b4465;
   font-family: 'Roboto', serif;
   line-height: 1.65;
   height: 100vh;
@@ -9,7 +9,7 @@ body {
   @include media(md) {
     background-color: $color-primary;
   }
-  
+
   @include media(lg) {
     background: $color-secondary;
   }
@@ -52,13 +52,24 @@ p + h4 {
 }
 
 a {
-  color: #385898;
+  color: $color-pointer;
   cursor: pointer;
   text-decoration: none;
 }
 
-input::placeholder {
-  color: #9b9b9b;
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+small {
+  font-size: .75rem;
+}
+
+input {
+  color: $color-input;
+  &::placeholder {
+    color: $color-placeholder;
+  }
 }
 
 div {
