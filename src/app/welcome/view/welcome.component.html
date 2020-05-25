@@ -5,16 +5,20 @@
 <!--  </li>-->
 <!--</ul>-->
 <div class="welcome">
-  <h1 class="app-tittle">Harvest</h1>
-  <div>
+  <div *ngIf="titleVisible$ | async; else notLogged">
     <img src="../../../assets/harvest-logo.png" alt="">
   </div>
+  <ng-template #notLogged>
+    <h1  class="app-tittle">Harvest</h1>
+  </ng-template>
   <div>
     <app-search-bar></app-search-bar>
     <app-product-categories></app-product-categories>
     <app-change-location></app-change-location>
   </div>
 </div>
+<router-outlet></router-outlet>
+
 
 
 

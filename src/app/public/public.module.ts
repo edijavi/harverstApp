@@ -28,7 +28,8 @@ import { ToolbarLoggedComponent } from './components/toolbar-logged/toolbar-logg
   ],
     exports: [
         ToolbarComponent,
-        HelpComponent
+        HelpComponent,
+        ToolbarLoggedComponent
     ]
 })
 export class PublicModule { }
