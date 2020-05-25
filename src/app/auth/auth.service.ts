@@ -59,9 +59,7 @@ export class AuthService {
 
   isAuthenticated() {
     return  this.authSubject.asObservable();
-}
-
-
+  }
 
 }
 

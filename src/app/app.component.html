@@ -1,4 +1,10 @@
-<app-toolbar>
-</app-toolbar>
-<app-login></app-login>
-<app-sign-up></app-sign-up>
+
+<div *ngIf="headerVisible$ | async; else notLogged">
+  <app-toolbar-logged></app-toolbar-logged>
+</div>
+<ng-template #notLogged>
+  <app-toolbar></app-toolbar>
+  <app-login></app-login>
+  <app-sign-up></app-sign-up>
+</ng-template>
+

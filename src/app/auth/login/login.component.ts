@@ -1,8 +1,9 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { AuthService  } from '../auth.service';
 
+declare var $:any;
 
 @Component({
   selector: 'app-login',
@@ -25,6 +26,8 @@ export class LoginComponent implements OnInit {
     this.authService.singIn(form.value).subscribe((res)=>{
       console.log("Logged in!");
       this.router.navigateByUrl('/welcome');
+      // TODO use angular boostrap version
+      $('#loginModal').modal('hide');
     });
   }
 
