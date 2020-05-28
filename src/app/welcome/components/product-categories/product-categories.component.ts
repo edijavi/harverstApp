@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCategoriesComponent implements OnInit {
   routes = [
-    { route: '/products/list-categories', id: 'legumbres', link: '../assets/icons/sprite.svg#legumbres'},
-    { route: '/products/list-categories', id: 'frutas', link: '../assets/icons/sprite.svg#frutas'},
-    { route: '/products/list-categories', id: 'verduras-hortalizas', link: '../assets/icons/sprite.svg#verduras-hortalizas'},
-    { route: '/products/list-categories', id: 'tuberculos', link: '../assets/icons/sprite.svg#tuberculos'},
-    { route: '/products/list-categories', id: 'frutos-secos', link: '../assets/icons/sprite.svg#frutos-secos'},
-    { route: '/products/list-categories', id: 'cereales', link: '../assets/icons/sprite.svg#cereales'}
+    { route: '/products/list-categories', id: 'legumes', link: '../assets/icons/sprite.svg#legumbres'},
+    { route: '/products/list-categories', id: 'fruits', link: '../assets/icons/sprite.svg#frutas'},
+    { route: '/products/list-categories', id: 'vegetables', link: '../assets/icons/sprite.svg#verduras-hortalizas'},
+    { route: '/products/list-categories', id: 'tubers', link: '../assets/icons/sprite.svg#tuberculos'},
+    { route: '/products/list-categories', id: 'nuts', link: '../assets/icons/sprite.svg#frutos-secos'},
+    { route: '/products/list-categories', id: 'cereals', link: '../assets/icons/sprite.svg#cereales'}
   ];
 
   constructor() { }
