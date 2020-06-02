@@ -9,38 +9,38 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="" class="form form--signup">
+        <form #myform="ngForm" (ngSubmit)="register(myform)" action="" class="form form--signup">
           <div class="form__row">
             <div class="form__group">
               <label for="name" class="form__label">Name</label>
-              <input type="text" class="form__control" placeholder="your name">
+              <input type="text" name="name" ngModel class="form__control" placeholder="your name">
             </div>
           </div>
           <div class="form__row">
             <div class="form__group">
               <label for="lastname" class="form__label">Surname</label>
-              <input type="text" class="form__control" placeholder="your surname">
+              <input type="text" name="surname" ngModel class="form__control" placeholder="your surname">
             </div>
           </div>
           <div class="form__row">
             <div class="form__group">
               <label for="email" class="form__label">Email</label>
-              <input type="email" class="form__control" placeholder="your email">
+              <input type="email" name="email" ngModel class="form__control" placeholder="your email">
             </div>
           </div>
           <div class="form__row">
             <div class="form__group">
               <label for="password" class="form__label">Password</label>
-              <input type="password" class="form__control" placeholder="password">
+              <input type="password" name="password" ngModel class="form__control" placeholder="password">
             </div>
           </div>
-          <div class="form__row">
+          <!-- <div class="form__row">
             <div class="form__group">
               <label for="password" class="form__label">Repeat password</label>
               <input type="password" class="form__control" placeholder="repeat password">
             </div>
-          </div>
-          <button type="button" class="btn btn-primary btn--signup">Sign-Up</button>
+          </div> -->
+          <button type="submit" value="Register" class="btn btn-primary btn--signup">Sign-Up</button>
         </form>
       </div>
       <div class="modal-footer">

@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   login(form){
     console.log(form.value);
     this.authService.singIn(form.value).subscribe((res)=>{
