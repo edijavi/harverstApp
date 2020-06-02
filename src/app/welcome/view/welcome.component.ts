@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import {ProductService} from '../../products/shared/util-product/product.service';
 import {Observable} from 'rxjs';
 import {Product} from '../../products/shared/util-product/product';
-import { AuthService } from 'src/app/auth/auth.service';
+import { AuthService } from '../../auth/shared/auth.service';
 
 @Component({
   selector: 'app-welcome',
