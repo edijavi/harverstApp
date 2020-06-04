@@ -14,14 +14,14 @@ jobs:
     displayName: 'npm install'
     inputs:
       command: install
-      workingDir: ./
+      workingDir: 
 
   - task: Npm@1
     displayName: 'Build Angular'
     inputs:
       command: custom
       customCommand: run build -- --prod
-      workingDir: ./
+      workingDir: 
 
   - task: PublishPipelineArtifact@0
     inputs:
@@ -31,14 +31,14 @@ jobs:
   - task: PublishBuildArtifacts@1
     inputs:
       PathtoPublish: 'dist'
-      ArtifactName: angular2
+      ArtifactName: angular9
 
   - task: Npm@1
     displayName: 'Test Angular'
     inputs:
       command: custom
       customCommand: run test -- --watch=false --code-coverage
-      workingDir: ./
+      workingDir: 
 
   - task: PublishCodeCoverageResults@1
     displayName: 'Publish code coverage Angular results'
@@ -63,14 +63,14 @@ jobs:
     inputs:
       command: custom
       customCommand: run lint --  --format=stylish
-      workingDir: ./
+      workingDir: 
 
   - task: Npm@1
     displayName: 'E2E Test Angular'
     inputs:
       command: custom
       customCommand: run e2e
-      workingDir: ./
+      workingDir: 
 
   - task: PublishTestResults@2
     displayName: 'Publish Angular E2E test results'
