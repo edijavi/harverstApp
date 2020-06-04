@@ -19,14 +19,11 @@ export class SignUpComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    debugger
   }
 
   register(form) {
-    debugger
     console.log(form.value);
     this.authService.register(form.value).subscribe((res) => {
-      debugger
       console.log("Registered!");
       this.router.navigateByUrl('/welcome');
       // TODO use angular boostrap version
