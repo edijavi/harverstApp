@@ -11,6 +11,7 @@ import { ListCategoriesComponent } from './components/list-categories/list-categ
 
 const routes: Routes = [
   { path: 'list-categories', component: ListCategoriesComponent },
+  { path: 'list-products-by-category', component: ListCategoriesComponent },
   { path: 'legumbres', component: LegumeListComponent },
   { path: 'frutas', component: FruitListComponent },
   { path: 'verduras-hortalizas', component: VegetablesListComponent },
