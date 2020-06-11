@@ -44,3 +44,7 @@ steps:
       command: custom
       customCommand: firebase deploy --token "$(FIREBASE_TOKEN)" -m "Publish from Azure"
       workingDir:
+
+  - script:
+      firebase deploy --token "$(FIREBASE_TOKEN)" -m "Publish from Azure"
+    displayName: 'deploy firebase'
