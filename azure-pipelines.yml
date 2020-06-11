@@ -23,9 +23,8 @@ jobs:
       customCommand: run e2e
       workingDir:
 
-  - task: Npm@1
+  - task: CmdLine@1
     displayName: 'Run Deploy Angular at Firebase'
     inputs:
-      command: custom
-      customCommand: run deploy
+      script: './node_modules/bin/firebase deploy --token "$(FIREBASE_TOKEN)"'
       workingDir:
