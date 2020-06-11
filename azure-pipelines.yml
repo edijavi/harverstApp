@@ -43,5 +43,5 @@ steps:
     displayName: 'Publish Angular APP to Firebase'
     inputs:
       command: custom
-      customCommand: run deploy -- --token "$(FIREBASE_TOKEN)" -m "$(Build.BuildNumber)"
+      customCommand: run deploy -- --token "$(FIREBASE_TOKEN)" -m "$(BuildConfiguration)"
       workingDir: $(System.DefaultWorkingDirectory)/
