@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="3.843" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2020-06-04T09:05:24" tests="0" file="cypress\integration\test.spec.js" failures="0" time="0">
+<testsuites name="Mocha Tests" time="13.988" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-06-11T10:38:32" tests="0" file="cypress\integration\test.spec.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="Some tests" timestamp="2020-06-04T09:05:24" tests="1" failures="0" time="3.843">
-    <testcase name="Some tests page loads" time="3.843" classname="page loads">
+  <testsuite name="Some tests" timestamp="2020-06-11T10:38:33" tests="1" failures="0" time="13.988">
+    <testcase name="Some tests page loads" time="13.988" classname="page loads">
     </testcase>
   </testsuite>
 </testsuites>

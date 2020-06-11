@@ -16,3 +16,9 @@ jobs:
       customCommand: run build -- --prod
       workingDir:
 
+  - task: Npm@1
+    displayName: 'Run Test Angular'
+    inputs:
+      command: custom
+      customCommand: run e2e
+      workingDir:
