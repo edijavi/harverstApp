@@ -10,20 +10,21 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-  - task: NodeTool@0
+  - task: Npm@1
+    displayName: 'npm install'
     inputs:
-      versionSpec: '10.x'
-    displayName: 'Install Node.js'
-
-  - script: |
-      npm install -g @angular/cli
-      npm install -g firebase-tools
-      npm install
-      ng build --prod
-    displayName: 'npm install and build'
+      command: install
+      workingDir:
 
   - task: Npm@1
-    displayName: 'Run Test Angular'
+    displayName: 'Build Angular'
+    inputs:
+      command: custom
+      customCommand: run build --prod
+      workingDir:
+
+  - task: Npm@1
+    displayName: 'E2E Test Angular'
     inputs:
       command: custom
       customCommand: run e2e
@@ -39,12 +40,9 @@ steps:
       testResultsFiles: "**/junit-result.xml"
 
   - task: CmdLine@2
-    displayName: 'firebase publish -m "Publish from Azure"'
+    displayName: 'Publish Angular APP to Firebase'
     inputs:
       command: custom
-      customCommand: firebase deploy --token "$(FIREBASE_TOKEN)" -m "Publish from Azure"
+      customCommand: run deploy
       workingDir:
 
-  - script:
-      firebase deploy --token "$(FIREBASE_TOKEN)" -m "Publish from Azure"
-    displayName: 'deploy firebase'
