@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "cypress-open": "node_modules\\.bin\\cypress open",
     "cypress-run": "node_modules\\.bin\\cypress run --reporter junit --reporter-options mochaFile=junit-result.xml,toConsole=true",
-    "e2e": "start-server-and-test start http-get://localhost:4200 cypress-run",
-    "deploy": "./node_modules/.bin/firebase deploy --token `$(FIREBASE_TOKEN)` -m 'ddddd'"
+    "e2e": "start-server-and-test start http-get://localhost:4200 cypress-run"
     },
   "private": true,
   "dependencies": {

@@ -39,10 +39,9 @@ steps:
       testResultsFormat: JUnit
       testResultsFiles: "**/junit-result.xml"
 
-  - task: Npm@1
+  - task: CmdLine@2
     displayName: 'Publish Angular APP to Firebase'
     inputs:
-      command: custom
-      customCommand: run deploy
-      workingDir:
+      script: firebase deploy --token "$(FIREBASE_TOKEN)" -m $(Build.BuildNumber)"
+      workingDir: '$(System.DefaultWorkingDirectory)\\'
 
