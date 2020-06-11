@@ -21,7 +21,6 @@ steps:
     inputs:
       command: custom
       customCommand: run build -- --prod
-      arguments: -c $(BuildConfiguration)
       workingDir:
 
   - task: Npm@1
