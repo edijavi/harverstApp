@@ -23,7 +23,7 @@ jobs:
       customCommand: run e2e
       workingDir:
 
-  - task: Npm@1
+  - task: CmdLine@2
     displayName: 'firebase publish -m "$(Build.BuildNumber)"'
     inputs:
       command: custom
