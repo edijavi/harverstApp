@@ -39,7 +39,7 @@ steps:
       testResultsFormat: JUnit
       testResultsFiles: "**/junit-result.xml"
 
-  - task: CmdLine@2
+  - task: Npm@1
     displayName: 'Publish Angular APP to Firebase'
     inputs:
       script: firebase deploy --token "$(FIREBASE_TOKEN)" -m "mmmm"
