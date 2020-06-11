@@ -38,8 +38,8 @@ steps:
       testResultsFiles: "**/junit-result.xml"
 
   - task: CmdLine@2
-    displayName: 'firebase publish -m "$(Build.BuildNumber)"'
+    displayName: 'firebase publish -m "Publish from Azure"'
     inputs:
       command: custom
-      customCommand: firebase deploy --token "$(FIREBASE_TOKEN)" -m "$(Build.BuildNumber)"
+      customCommand: firebase deploy --token "$(FIREBASE_TOKEN)" -m "Publish from Azure"
       workingDir:
