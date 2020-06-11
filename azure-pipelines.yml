@@ -27,5 +27,5 @@ jobs:
     displayName: 'Run Deploy Angular at Firebase'
     inputs:
       command: custom
-      customCommand: run deploy --token "$FIREBASE_TOKEN"
+      customCommand: run deploy
       workingDir:
