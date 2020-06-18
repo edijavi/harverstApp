@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ListProductsByCategoryComponent implements OnInit {
 
   routes = [
-    { route: '/products/legumbres'},
-    { route: '/products/frutas'},
-    { route: '/products/verduras-hortalizas'},
-    { route: '/products/tuberculos'},
-    { route: '/products/frutos-secos'},
-    { route: '/products/cereales'}
+    { route: '/products/product-details'},
+    { route: '/products/product-details'},
+    { route: '/products/product-details'},
+    { route: '/products/product-details'},
+    { route: '/products/product-details'},
+    { route: '/products/product-details'}
   ];
 
   constructor() { }
