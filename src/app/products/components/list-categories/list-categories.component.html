@@ -1,27 +1,7 @@
 <app-results-header></app-results-header>
 <div class="list-group" id="myList" role="tablist">
-  <a class="list-group-item list-group-item--categories list-group-item-action active" data-toggle="list" href="#legumbres" role="tab">
-    Legumbres
-    <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
-  </a>
-  <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#frutas" role="tab">
-    Frutas
-    <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
-  </a>
-  <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#verduras-hortalizas" role="tab">
-    Verduras-Hortalizas
-    <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
-  </a>
-  <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#tuberculos" role="tab">
-    Tuberculos
-    <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
-  </a>
-  <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#frutos-secos" role="tab">
-    Frutos-Secos
-    <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
-  </a>
-  <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" href="#cereales" role="tab">
-    Cereales
+  <a class="list-group-item list-group-item--categories list-group-item-action" data-toggle="list" role="tab" *ngFor="let route of routes" [routerLink]="route.route">
+    {{route.category}}
     <span class="badge badge-primary badge-primary--categories badge-pill">2</span>
   </a>
 </div>

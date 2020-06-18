@@ -8,16 +8,20 @@ import { TuberListComponent } from './components/tuber-list/tuber-list.component
 import { NutsListComponent } from './components/nuts-list/nuts-list.component';
 import { CerealListComponent } from './components/cereal-list/cereal-list.component';
 import { ListCategoriesComponent } from './components/list-categories/list-categories.component';
+import { ListProductsByCategoryComponent } from './components/list-products-by-category/list-products-by-category.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 const routes: Routes = [
   { path: 'list-categories', component: ListCategoriesComponent },
-  { path: 'list-products-by-category', component: ListCategoriesComponent },
-  { path: 'legumbres', component: LegumeListComponent },
-  { path: 'frutas', component: FruitListComponent },
-  { path: 'verduras-hortalizas', component: VegetablesListComponent },
-  { path: 'tuberculos', component: TuberListComponent },
-  { path: 'frutos-secos', component: NutsListComponent },
-  { path: 'cereales', component: CerealListComponent }
+  { path: 'list-products-by-category', component: ListProductsByCategoryComponent },
+  { path: 'legumes', component: LegumeListComponent },
+  { path: 'fruits', component: FruitListComponent },
+  { path: 'vegetables', component: VegetablesListComponent },
+  { path: 'tubers', component: TuberListComponent },
+  { path: 'nuts', component: NutsListComponent },
+  { path: 'cereals', component: CerealListComponent },
+  { path: 'product-details', component: ProductDetailsComponent }
+
 ];
 
 @NgModule({
