@@ -9,12 +9,15 @@
     <img src="../../../assets/harvest-logo.png" alt="">
   </div>
   <ng-template #notLogged>
-    <h1  class="app-tittle">Edison Lamar Final Exam</h1>
+    <h1  class="welcome__app-tittle"> The Harvest</h1>
   </ng-template>
   <div>
     <app-search-bar></app-search-bar>
     <app-product-categories></app-product-categories>
     <app-change-location></app-change-location>
+  </div>
+  <div class="welcome__new-product">
+    <app-new-product *ngIf="titleVisible$ | async;"></app-new-product>
   </div>
 </div>
 <router-outlet></router-outlet>

@@ -14,9 +14,9 @@ import { ListCategoriesComponent } from './components/list-categories/list-categ
 import { ResultsHeaderComponent } from './components/results-header/results-header.component';
 import { ListProductsByNameComponent } from './components/list-products-by-name/list-products-by-name.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { NewProductComponent } from './components/new-product/new-product.component';
 import { ProductRequestComponent } from './components/product-request/product-request.component';
 import { SuccessedRequestComponent } from './components/successed-request/successed-request.component';
+import { NewProductComponent } from './components/new-product/new-product.component';
 
 
 
@@ -34,13 +34,16 @@ import { SuccessedRequestComponent } from './components/successed-request/succes
     ResultsHeaderComponent,
     ListProductsByNameComponent,
     ProductDetailsComponent,
-    NewProductComponent,
     ProductRequestComponent,
-    SuccessedRequestComponent],
+    SuccessedRequestComponent,
+    NewProductComponent
+  ],
   imports: [
     CommonModule,
     ProductsRoutingModule
   ],
-
+  exports: [
+    NewProductComponent
+  ]
 })
 export class ProductsModule { }

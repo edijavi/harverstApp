@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import {PublicRoutingModule} from './public-routing.module';
+import { PublicRoutingModule } from './public-routing.module';
 import { HelpComponent } from './components/help/help.component';
 import { ToolbarLoggedComponent } from './components/toolbar-logged/toolbar-logged.component';
 

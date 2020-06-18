@@ -6,6 +6,7 @@ import { WelcomeComponent } from './view/welcome.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { ProductCategoriesComponent } from './components/product-categories/product-categories.component';
 import { ChangeLocationComponent } from './components/change-location/change-location.component';
+import { ProductsModule } from '../products/products.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ChangeLocationComponent } from './components/change-location/change-loc
   ],
   imports: [
     CommonModule,
-    WelcomeRoutingModule
-  ]
+    WelcomeRoutingModule,
+    ProductsModule
+    ]
 })
 export class WelcomeModule { }
