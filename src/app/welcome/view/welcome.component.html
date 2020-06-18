@@ -5,7 +5,7 @@
 <!--  </li>-->
 <!--</ul>-->
 <div class="welcome">
-  <div *ngIf="titleVisible$ | async; else notLogged">
+  <div class="welcome__logo" *ngIf="titleVisible$ | async; else notLogged">
     <img src="../../../assets/harvest-logo.png" alt="">
   </div>
   <ng-template #notLogged>
